@@ -11,13 +11,11 @@
 
 .main-heading::after {
     left: 2px;
-    text-shadow: -1px 0 #2e234f;
     animation: glitchAfter 3s infinite ease;
 }
 
 .main-heading::before {
     left: -2px;
-    text-shadow: 1px 0 #2e234f;
     animation: glitchBefore 10s infinite ease;
 }
 

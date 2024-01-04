@@ -9,6 +9,7 @@
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
+  z-index: -1;
 }
 
 @media screen and (max-width: 992px) {
@@ -161,24 +162,19 @@
   transform: translateY(25px);
   transition: all 0.4s;
 }
-.blog-slider__code {
-  color: #7b7992;
-  margin-bottom: 15px;
-  display: block;
-  font-weight: 500;
-}
+
 .blog-slider__title {
   font-size: 28px;
   font-weight: 700;
-  color: #0d0925;
   margin-bottom: 20px;
 }
+
 .blog-slider__text {
-  color: #4e4a67;
   margin-bottom: 30px;
   line-height: 1.5em;
   font-size: 18px;
 }
+
 .blog-slider__button {
   display: inline-flex;
   background-image: linear-gradient(147deg, #d0c5ed 0%, #AF92F9 74%);
@@ -233,7 +229,7 @@
   height: 11px;
   display: block;
   border-radius: 10px;
-  background: #062744;
+  background: #6264d1;
   opacity: 0.2;
   transition: all 0.3s;
 }
