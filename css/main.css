@@ -190,21 +190,12 @@ h2 {
     margin: 32px 0;
 }
 
-@media screen and (max-width: 610px) {
-    .trend {
-        align-items: center;
-    }
-
-    .trend-description {
-        text-align: center;
-    }
-}
-
 .trend {
     display: flex;
     flex-direction: column;
     flex-basis: 270px;
     flex: 1;
+    align-items: center;
     padding: 10px;
 }
 
@@ -222,12 +213,14 @@ h2 {
     margin: 0;
     line-height: 1.2rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .trend-description {
     margin: 0;
     font-size: 20px;
     line-height: 1.2rem;
+    text-align: center;
 }
 
 .image-100 {
