@@ -16,15 +16,38 @@
 
 </head>
 <body>
-
     <div class="shape-divider">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
     </div>
-    <div class="theme shadow-light">
-        <img class="change-theme" id="theme-icon-light" data-theme="light" src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg" alt="Theme">
-        <img class="change-theme" id="theme-icon-dark" data-theme="dark" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="Theme">
+    <div class="icons">
+      <div class="icon theme shadow-light">
+          <img class="change-icon change-theme" id="theme-icon-light" data-theme="light" src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg" alt="Theme">
+          <img class="change-icon change-theme" id="theme-icon-dark" data-theme="dark" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="Theme">
+      </div>
+      <div>
+        <div class="icon bookmark shadow-light" id="bookmark-icon">
+          <img class="change-icon open-modal"  data-theme="light" src="./img/bookmark-dark.png"  width="28px" alt="bookmark-icon">
+          <img class="change-icon open-modal"  data-theme="dark" src="./img/bookmark.png" width="28px" alt="bookmark-icon">
+        </div>
+      </div>
+    </div>
+    <div class="sidebar w-0" id="modal">
+      <div class="sidebar-content">
+        <div class="sidebar-header">
+          <h2>Оглавление</h2>
+          <button class="close"></button>
+        </div>
+        <ul class="contents">
+          <li data-number="1"><a href="#introduction" class="link">Введение</a></li>
+          <li data-number="2"><a href="#web3.0" class="link">Web 3.0</a></li>
+          <li data-number="3"><a href="#developmentState" class="link">Текущее состояние развития Web 3.0</a></li>
+          <li data-number="4"><a href="#components" class="link">Основные компоненты семантической паутины</a></li>
+          <li data-number="5"><a href="#application" class="link">Области применения семантической паутины</a></li>
+          <li data-number="6"><a href="#layout" class="link">Семантическая вёрстка</a></li>
+          <li data-number="7"><a href="#conclusion" class="link">Заключение</a></li>
+      </ul>
       </div>
     </div>
     <main class="container">
@@ -111,6 +134,7 @@
           <p>Семантическая паутина и верстка являются двумя фундаментальными понятиями в современной веб-разработке и ориентированы на улучшение организации и семантики веб-страниц.</p>
         </div>
         
+        <h2 class="fade-in">Оглавление</h2>
         <ul class="contents fade-in">
             <li data-number="1"><a href="#introduction" class="link">Введение</a></li>
             <li data-number="2"><a href="#web3.0" class="link">Web 3.0</a></li>

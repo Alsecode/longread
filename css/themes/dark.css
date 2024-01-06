@@ -14,6 +14,10 @@ html {
     background: var(--bg-color);
 }
 
+.sidebar {
+    background: var(--bg-color);
+}
+
 .main-heading::after, .main-heading::before {
     text-shadow: -1px 0 var(--glitch-shadow-color);
 }
@@ -44,10 +48,10 @@ html {
     filter: invert(1);
 }
 
-.change-theme[data-theme="light"] {
+.change-icon[data-theme="light"] {
     display: block;
 }
 
-.change-theme[data-theme="dark"] {
+.change-icon[data-theme="dark"] {
     display: none;
 }
