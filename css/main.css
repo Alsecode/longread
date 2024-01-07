@@ -16,6 +16,7 @@ html {
     font-family: Onest;
     scroll-behavior: smooth;
     transition: 1s;
+    overflow-x: hidden;
 }
 
 

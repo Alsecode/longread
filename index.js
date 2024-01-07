@@ -1,3 +1,5 @@
+new WOW().init();
+
 window.addEventListener('scroll', function() {
     const elements = document.querySelectorAll('.fade-in');
  

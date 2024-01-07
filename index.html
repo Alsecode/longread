@@ -7,9 +7,11 @@
     <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" title="theme" href="./css/themes/dark.css">
+    <link rel="stylesheet" href="./libs/animate/animate.min.css">
 
     <title>LongRead</title>
 
+    <script src="./libs/wow/wow.min.js" defer></script>
     <script src="./libs/jquery/jquery.min.js" defer></script>
     <script src="./libs/swiper/swiper.min.js" defer></script>
     <script src="index.js" defer></script>
@@ -51,8 +53,8 @@
       </div>
     </div>
     <main class="container">
-        <h1 class="main-heading">Что такое семантическая паутина и вёрстка?</h1>
-        <div class="header-block">
+        <h1 data-wow-duration="2s" class="main-heading wow animate__animated animate__fadeInRight">Что такое семантическая паутина и вёрстка?</h1>
+        <div class="header-block animate__animated animate__fadeInUpBig">
           <div class="canvas">
             <div class="ninth">
               <div class="cornersWrapper">
@@ -134,16 +136,18 @@
           <p>Семантическая паутина и верстка являются двумя фундаментальными понятиями в современной веб-разработке и ориентированы на улучшение организации и семантики веб-страниц.</p>
         </div>
         
-        <h2 class="fade-in">Оглавление</h2>
-        <ul class="contents fade-in">
-            <li data-number="1"><a href="#introduction" class="link">Введение</a></li>
-            <li data-number="2"><a href="#web3.0" class="link">Web 3.0</a></li>
-            <li data-number="3"><a href="#developmentState" class="link">Текущее состояние развития Web 3.0</a></li>
-            <li data-number="4"><a href="#components" class="link">Основные компоненты семантической паутины</a></li>
-            <li data-number="5"><a href="#application" class="link">Области применения семантической паутины</a></li>
-            <li data-number="6"><a href="#layout" class="link">Семантическая вёрстка</a></li>
-            <li data-number="7"><a href="#conclusion" class="link">Заключение</a></li>
-        </ul>
+        <div>
+          <h2 class="wow animate__animated animate__fadeInDown">Оглавление</h2>
+          <ul class="contents wow animate__animated animate__fadeInLeft">
+              <li data-number="1"><a href="#introduction" class="link">Введение</a></li>
+              <li data-number="2"><a href="#web3.0" class="link">Web 3.0</a></li>
+              <li data-number="3"><a href="#developmentState" class="link">Текущее состояние развития Web 3.0</a></li>
+              <li data-number="4"><a href="#components" class="link">Основные компоненты семантической паутины</a></li>
+              <li data-number="5"><a href="#application" class="link">Области применения семантической паутины</a></li>
+              <li data-number="6"><a href="#layout" class="link">Семантическая вёрстка</a></li>
+              <li data-number="7"><a href="#conclusion" class="link">Заключение</a></li>
+          </ul>
+        </div>
 
         <h2 id="introduction" class="fade-in">Введение</h2>
         <p class="fade-in">
@@ -152,18 +156,18 @@
         <p class="fade-in">
             В технологическом контексте текущее состояние характеризуется быстрым и постоянным развитием и изменением различных аспектов Интернета и его приложений. В эти изменения входят: рост интернета вещей, интенсивное развитие беспроводных сетей, активное использование искусственного интеллекта и расширение облачных вычислений. Указанные технологические тенденции создают новые возможности в сферах, связанных со сбором, анализом и передачей данных, а также поднимают вопросы о безопасности, приватности и управлении информацией в сети.
         </p>
-        <p class="fade-in video-heading">Как цифровые технологии изменяют мир?</p>
-        <iframe class="fade-in" width="100%" height="500px" src="https://www.youtube.com/embed/pq8rN779ph4?si=k39W1pkGrOdVsfur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="video-heading">Как цифровые технологии изменяют мир?</p>
+        <iframe class="wow animate__animated animate__backInUp" width="100%" height="500px" src="https://www.youtube.com/embed/pq8rN779ph4?si=k39W1pkGrOdVsfur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <p class="fade-in">
             Современное состояние области в социальном контексте отличается широким распространением цифровых средств, что влечет изменения в образе жизни, общении, обучении и трудовой деятельности. Социальные сети, онлайн-платформы и цифровые медиа стали основными каналами для обмена информацией и выражения мнений. Создаются уникальные возможности для гражданской активности, но также чаще ставятся вопросы о фильтрации информации и влиянии алгоритмов на мнения людей.  
         </p>
-        <div class="footnote" class="fade-in">
-            <p class="fade-in">Российская интернет-аудитория в 2020 г. выросла на 2%. Доля тех, кто когда-либо выходил в Сеть, достигла почти 90%, а для 76,7% россиян это стало ежедневной практикой. Уровень цифровых навыков занятого населения (33,4%) в среднем выше, чем у неактивных на рынке труда и безработных граждан.</p>
-            <p class="footnote-signature fade-in"><a  href="https://issek.hse.ru/internet_trends_2022" target="_blank" class="link">НИУ ВШЭ «От цифровых возможностей к цифровой реальности»</a></p>
+        <div class="footnote wow animate__animated animate__shakeY" class="fade-in">
+            <p class="">Российская интернет-аудитория в 2020 г. выросла на 2%. Доля тех, кто когда-либо выходил в Сеть, достигла почти 90%, а для 76,7% россиян это стало ежедневной практикой. Уровень цифровых навыков занятого населения (33,4%) в среднем выше, чем у неактивных на рынке труда и безработных граждан.</p>
+            <p class="footnote-signature"><a  href="https://issek.hse.ru/internet_trends_2022" target="_blank" class="link">НИУ ВШЭ «От цифровых возможностей к цифровой реальности»</a></p>
         </div>
         <h2 id="web3.0" class="fade-in">Web 3.0</h2>
 
-         <div class="blog-slider swiper-container-fade swiper-container-horizontal">
+         <div class="blog-slider swiper-container-fade swiper-container-horizontal wow animate__animated animate__pulse">
             <div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 630px; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; opacity: 1;">
                 <div class="blog-slider__img">
                   <img src="./img/web1.png" alt="web1.0">
@@ -207,20 +211,20 @@
           <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
         <p class="fade-in">Web 3.0 представляет следующий этап развития интернета, в котором информация обретает смысловое значение (семантический веб). Семантика позволяет компьютерам более эффективно анализировать содержимое веб-страниц и взаимодействовать с ним. Web 3.0 ориентирован на создание более интеллектуальных, персонализированных и взаимодействующих с пользователем интернет-сервисов.</p>
-        <img class="image-100 fade-in" src="./img/historyofweb.jpg">
+        <img class="image-100 wow animate__animated animate__fadeInDown" src="./img/historyofweb.jpg">
         <p class="align-center fade-in">Ключевые технологические тренды в данной области</p>
-        <div class="trends-container fade-in">
-            <div class="trend fade-in">
+        <div class="trends-container">
+            <div class="trend fade-in wow animate__animated animate__fadeInLeft">
                 <img src="./img/centralized.png" class="trend-image">
                 <p class="trend-header">Децентрализация</p>
                 <p class="trend-description">Контроль над данными и контентом становится более равномерно распределенным и под пользовательским контролем</p>
             </div>
-            <div class="trend fade-in">
+            <div class="trend fade-in wow animate__animated animate__fadeInUp">
                 <img src="./img/ai.png" class="trend-image">
                 <p class="trend-header">Искусственный интеллект</p>
                 <p class="trend-description">Анализ больших объемов данных и создание семантических связей между информацией</p>
             </div>
-            <div class="trend fade-in">
+            <div class="trend fade-in wow animate__animated animate__fadeInRight">
                 <img src="./img/semantic.png" class="trend-image">
                 <p class="trend-header">Семантическая паутина и вёрстка</p>
                 <p class="trend-description">Улучшение поиска и фильтрации информации</p>
@@ -229,8 +233,8 @@
 
         <p class="fade-in">Концепция Web 3.0 является логическим продолжением Web 2.0, которая обеспечивала понимание информации в Web в первую очередь человеком. Web 3.0 же ориентирована на взаимодействие и понимание данных в Web компьютерными системами. Внедрение Web 3.0 позволяет интернету стать более интегрированным, интеллектуальным и контекстуальным. Вместо простого представления данных и информации, Web 3.0 нацелен на создание интернета, который способен понимать смысл информации, учитывать контекст и предоставлять более умные и персонализированные услуги и решения. </p>
         <p class="fade-in">Таким образом, Web 3.0 является более мощным инструментом для удовлетворения потребностей пользователей, более эффективной передачи знаний и информации, а также более продуктивным инструментом для различных сфер деятельности, включая бизнес, образование, здравоохранение и многие другие.</p>
-        <iframe class="fade-in" width="100%" height="500px" src="https://www.youtube.com/embed/WxBjCzB3kk8?si=mAbzMoy_mZiFMAUh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="footnote mt-20 fade-in">
+        <iframe class="wow animate__animated animate__backInUp" width="100%" height="500px" src="https://www.youtube.com/embed/WxBjCzB3kk8?si=mAbzMoy_mZiFMAUh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="footnote mt-20 wow animate__animated animate__shakeY">
             <p class="fade-in">Подробнее о возможностях и нововведениях концепции Web 3.0 можно прочитать в научных статьях
             <a  href="https://cyberleninka.ru/article/n/vozmozhnosti-sistemy-web-3-0-v-sovremennom-mediaprostranstve-problemy-i-perspektivy/viewer" target="_blank" class="link">В.А. Шачковой</a>
             и <a  href="https://moluch.ru/archive/90/15996/" target="_blank" class="link">Ш.Х. Позиловой</a>.</p>
@@ -241,7 +245,7 @@
         <p class="fade-in mt-24">Основные причины, по которым технологии Web 3.0 могут не использоваться или использоваться не в полной мере:</p>
         
         <div class="cards fade-in">
-        <div class="flip-card">
+        <div class="flip-card wow animate__animated animate__jello">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./img/difficult.png" alt="Card Front Image">
@@ -254,7 +258,7 @@
               </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow animate__animated animate__jello">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./img/procedure.png" alt="Card Front Image">
@@ -267,7 +271,7 @@
               </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow animate__animated animate__jello">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./img/law.png" alt="Card Front Image">
@@ -280,7 +284,7 @@
               </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow animate__animated animate__jello">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./img/growth.png" alt="Card Front Image">
@@ -293,7 +297,7 @@
               </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow animate__animated animate__jello">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./img/cooperation.png" alt="Card Front Image">
@@ -306,7 +310,7 @@
               </div>
             </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow animate__animated animate__jello">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./img/database.png" alt="Card Front Image">
@@ -324,16 +328,16 @@
         <h2 id="components" class="fade-in">Основные компоненты семантической паутины</h2>
         <p class="fade-in">Машинная обработка данных становится возможной благодаря двум ключевым аспектам, присущим семантической паутине: использованию унифицированных идентификаторов ресурсов (URI) и применению семантических сетей и онтологий.</p>
         <p class="fade-in">URI (Uniform Resource Identifier) представляют собой ключевой элемент, который обеспечивает уникальную идентификацию ресурсов в сети Интернет. URI – это строка из символов, которая уникально определяет ресурс, будь то веб-страница, изображение, документ, или любой другой контент. URI могут быть выражены в виде URL (Uniform Resource Locator), который указывает на местоположение ресурса, или URN (Uniform Resource Name), который является идентификационным маркером и не предоставляет информацию о местоположении.</p>
-        <img src="./img/uri.png" alt="uri" class="uri-image fade-in">
+        <img src="./img/uri.png" alt="uri" class="uri-image wow animate__animated animate__fadeInDown">
         <p class="fade-in">URI в контексте семантической паутины служат важным механизмом для связывания и описания данных. Они обеспечивают способность к разметке ресурсов семантической информацией и метаданными, что позволяет компьютерам и поисковым системам понимать смысл и связи между данными. Это содействует созданию сети взаимосвязанных данных и позволяет машинам эффективней извлекать и анализировать информацию на веб-страницах, делая контент более доступным для приложений и сервисов.</p>
         <div class="example-block">
           <p class="fade-in">Пример URI:</p>
-          <img src="./img/uri-example.jpg" alt="uri-example" class="uri-example-image fade-in">
+          <img src="./img/uri-example.jpg" alt="uri-example" class="uri-example-image wow animate__animated animate__fadeInDown">
         </div>
         <p class="fade-in"><em>Семантические сети</em> – это графические структуры, которые представляют знания и концепции в виде узлов (вершин) и связей между ними. Семантические сети позволяют описывать семантику данных на веб-страницах и их взаимосвязи для того, чтобы информация была структурированной и интерпретируемой как людьми, так и компьютерами.</p>
         <p class="fade-in"><em>Онтологии</em> – это формализованные модели знаний, которые определяют семантику данных и их отношения в конкретной предметной области. Онтологии определяют классы (типы данных), свойства (атрибуты) и отношения между ними. Их применение позволяет точно и формально описывать смысл данных на веб-страницах.</p>
         <p class="fade-in mt-24">Техническую часть семантической паутины составляет семейство стандартов на языки описания, включающее XML, XML Schema, RDF, RDF Schema, OWL и другие.</p>
-        <div class="footnote fade-in">
+        <div class="footnote wow animate__animated animate__shakeY">
             <p>Подробнее о компонентах семантической паутины можно прочитать в научных статьях
             <a  href="https://openbooks.itmo.ru/ru/read_article/92/" target="_blank" class="link">И.А. Бессмертного</a>
             и <a  href="https://ceur-ws.org/Vol-1536/paper29.pdf" target="_blank" class="link">В.П. Тельнова</a>.</p>
@@ -341,22 +345,22 @@
 
         <h2 class="fade-in" id="application">Области применения семантической паутины</h2>
         <p class="fade-in">Семантическая паутина, как концепция, была предложена Тимом Бернерсом-Ли исследованиями конца 1990-х годов. С тех пор идеи и принципы семантической паутины начали внедряться в различных областях</p>
-        <div class="application-blocks fade-in">
-            <div class="application-block fade-in">
-                <p class="application-block-text"><span class="bold">Семантический поиск.</span> Поисковые системы все больше учитывают семантическую информацию при анализе и ранжировании результатов поиска. Семантически размеченные данные позволяют точнее определять смысл запросов и улучшать качество поисковых результатов.</p>
-                <img class="application-block-image" src="./img/semanticSearch.png" alt="search">
+        <div class="application-blocks">
+            <div class="application-block">
+                <p class="application-block-text wow animate__animated animate__fadeInLeft"><span class="bold">Семантический поиск.</span> Поисковые системы все больше учитывают семантическую информацию при анализе и ранжировании результатов поиска. Семантически размеченные данные позволяют точнее определять смысл запросов и улучшать качество поисковых результатов.</p>
+                <img class="application-block-image wow animate__animated animate__fadeInRight" src="./img/semanticSearch.png" alt="search">
             </div>
             <div class="application-block fade-in">
-                <img class="application-block-image" src="./img/bigdata.png" alt="bigdata">
-                <p class="application-block-text"><span class="bold">Большие данные и аналитика.</span> Семантическая паутина способствует более глубокому пониманию контента, учитывая семантические связи и контекст, что особенно важно в условиях обработки обширных и разнообразных наборов данных. Семантическая паутина облегчает аналитику, позволяя эффективно выявлять паттерны, ассоциации и тренды, что в свою очередь способствует более точным и информативным выводам при анализе больших объемов данных.</p>
+                <img class="application-block-image wow animate__animated animate__fadeInLeft" src="./img/bigdata.png" alt="bigdata">
+                <p class="application-block-text wow animate__animated animate__fadeInRight"><span class="bold">Большие данные и аналитика.</span> Семантическая паутина способствует более глубокому пониманию контента, учитывая семантические связи и контекст, что особенно важно в условиях обработки обширных и разнообразных наборов данных. Семантическая паутина облегчает аналитику, позволяя эффективно выявлять паттерны, ассоциации и тренды, что в свою очередь способствует более точным и информативным выводам при анализе больших объемов данных.</p>
             </div>
             <div class="application-block fade-in">
-                <p class="application-block-text"><span class="bold">Биоинформатика.</span> В этой сфере семантическая паутина используется для описания и интеграции геномных данных, научных публикаций и медицинских знаний, что помогает исследователям и медицинским специалистам находить новые связи и делать более точные заключения.</p>
-                <img class="application-block-image" src="./img/bioinf.png" alt="bioinf">
+                <p class="application-block-text wow animate__animated animate__fadeInLeft"><span class="bold">Биоинформатика.</span> В этой сфере семантическая паутина используется для описания и интеграции геномных данных, научных публикаций и медицинских знаний, что помогает исследователям и медицинским специалистам находить новые связи и делать более точные заключения.</p>
+                <img class="application-block-image wow animate__animated animate__fadeInRight" src="./img/bioinf.png" alt="bioinf">
             </div>
             <div class="application-block fade-in">
-                <img class="application-block-image" src="./img/iot.png" alt="iot">
-                <p class="application-block-text"><span class="bold">Интернет вещей.</span> В IoT семантическая паутина может использоваться для описания и взаимодействия между различными устройствами и датчиками, упрощая автоматизацию и интеграцию данных в умные системы.</p>
+                <img class="application-block-image wow animate__animated animate__fadeInLeft" src="./img/iot.png" alt="iot">
+                <p class="application-block-text wow animate__animated animate__fadeInRight"><span class="bold">Интернет вещей.</span> В IoT семантическая паутина может использоваться для описания и взаимодействия между различными устройствами и датчиками, упрощая автоматизацию и интеграцию данных в умные системы.</p>
             </div>
         </div>
 
@@ -420,8 +424,8 @@
             SEO-оптимизация: семантическая верстка улучшает оптимизацию поисковых систем (SEO), так как браузеры и поисковые роботы могут лучше понимать структуру и смысл страницы, что может повысить её позиции в результатах поиска.
         </li>
         </ol>
-        <img src="./img/semant.png" alt="Семантическая верстка" class="image-100 fade-in">
-        <div class="footnote fade-in">
+        <img src="./img/semant.png" alt="Семантическая верстка" class="image-100 wow animate__animated animate__fadeInDown">
+        <div class="footnote wow animate__animated animate__shakeY">
             <p class="fade-in">Прочитать о подробных рекомендациях по применению семантической вёрстки можно в статьях
             <a  href="https://wezom.com.ua/blog/chto-takoe-semanticheskaya-verstka" target="_blank" class="link">Wezom</a>
             и <a  href="https://medium.com/@stasonmars/%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%81%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B8%CC%86-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B8-%D0%B2-html5-c7cd5e6f1ebb" target="_blank" class="link">Medium</a>.</p>
