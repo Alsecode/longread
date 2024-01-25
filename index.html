@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ru">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Longread about semantic web and web-3.0.">
     <link rel="icon" href="./img/favicon/favicon-16x16.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="./src/css/app.css">
@@ -15,9 +16,8 @@
     <script src="./src/libs/jquery/jquery.min.js" defer></script>
     <script src="./src/libs/swiper/swiper.min.js" defer></script>
     <script src="index.js" defer></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="shape-divider">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -161,7 +161,7 @@
         <p class="fade-in">
             Современное состояние области в социальном контексте отличается широким распространением цифровых средств, что влечет изменения в образе жизни, общении, обучении и трудовой деятельности. Социальные сети, онлайн-платформы и цифровые медиа стали основными каналами для обмена информацией и выражения мнений. Создаются уникальные возможности для гражданской активности, но также чаще ставятся вопросы о фильтрации информации и влиянии алгоритмов на мнения людей.  
         </p>
-        <div class="footnote wow animate__animated animate__shakeY" class="fade-in">
+        <div class="footnote wow animate__animated animate__shakeY">
             <p class="">Российская интернет-аудитория в 2020 г. выросла на 2%. Доля тех, кто когда-либо выходил в Сеть, достигла почти 90%, а для 76,7% россиян это стало ежедневной практикой. Уровень цифровых навыков занятого населения (33,4%) в среднем выше, чем у неактивных на рынке труда и безработных граждан.</p>
             <p class="footnote-signature"><a  href="https://issek.hse.ru/internet_trends_2022" target="_blank" class="link">НИУ ВШЭ «От цифровых возможностей к цифровой реальности»</a></p>
         </div>
@@ -211,21 +211,21 @@
           <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 
         <p class="fade-in">Web 3.0 представляет следующий этап развития интернета, в котором информация обретает смысловое значение (семантический веб). Семантика позволяет компьютерам более эффективно анализировать содержимое веб-страниц и взаимодействовать с ним. Web 3.0 ориентирован на создание более интеллектуальных, персонализированных и взаимодействующих с пользователем интернет-сервисов.</p>
-        <img class="image-100 wow animate__animated animate__fadeInDown" src="./img/historyofweb.jpg">
+        <img class="image-100 wow animate__animated animate__fadeInDown" src="./img/historyofweb.jpg" alt="history-of-web">
         <p class="align-center fade-in">Ключевые технологические тренды в данной области</p>
         <div class="trends-container">
             <div class="trend fade-in wow animate__animated animate__fadeInLeft">
-                <img src="./img/centralized.png" class="trend-image">
+                <img src="./img/centralized.png" class="trend-image" alt="decentralization">
                 <p class="trend-header">Децентрализация</p>
                 <p class="trend-description">Контроль над данными и контентом становится более равномерно распределенным и под пользовательским контролем</p>
             </div>
             <div class="trend fade-in wow animate__animated animate__fadeInUp">
-                <img src="./img/ai.png" class="trend-image">
+                <img src="./img/ai.png" class="trend-image" alt="artificial-intellegence">
                 <p class="trend-header">Искусственный интеллект</p>
                 <p class="trend-description">Анализ больших объемов данных и создание семантических связей между информацией</p>
             </div>
             <div class="trend fade-in wow animate__animated animate__fadeInRight">
-                <img src="./img/semantic.png" class="trend-image">
+                <img src="./img/semantic.png" class="trend-image" alt="sematntic-web">
                 <p class="trend-header">Семантическая паутина и вёрстка</p>
                 <p class="trend-description">Улучшение поиска и фильтрации информации</p>
             </div>
@@ -366,7 +366,8 @@
 
         <h2 id="layout" class="fade-in">Семантическая вёрстка</h2>
         <p class="fade-in"><em>Семантическая вёрстка</em> – это методология в веб-разработке, которая основывается на создании веб-страниц с акцентом на семантике и структуре контента, чтобы сделать их более понятными и интерпретируемыми как браузерами, так и поисковыми системами. Данный подход уделяет особое внимание использованию семантических элементов HTML (тегов) для разметки веб-страниц.</p>
-        <ol class="list fade-in"><span>Основные принципы и характеристики семантической верстки:</span>
+        <span class="list fade-in">Основные принципы и характеристики семантической верстки:</span>
+        <ol class="fade-in">
             <li class="fade-in">
              <p>
                 Использование семантических элементов: вместо применения HTML-тегов только для стилизации и визуального оформления, семантическая верстка предполагает использование тегов HTML в соответствии с их семантическим значением. Например, вместо тега <span class="tag">&lt;p&gt;</span> или <span class="tag">&lt;div&gt;</span> для создания заголовка следует использовать <span class="tag">&lt;h1&gt;</span>, для списка – <span class="tag">&lt;ul&gt;</span> и <span class="tag">&lt;li&gt;</span>, для абзаца – <span class="tag">&lt;p&gt;</span>, для навигации – <span class="tag">&lt;nav&gt;</span> и так далее. За счет этого, структура веб-страницы становится понятней и информативней. 
@@ -440,6 +441,5 @@
         
         <p class="author fade-in"><em>Макарс Артур</em></p>
     </main>
-
-</body>
+  </body>
 </html>
