@@ -38,7 +38,7 @@ switchers.forEach(switcher => {
 })
 
 const applyTheme = (themeName) => {
-  const themeUrl = `./css/themes/${themeName}.css`;
+  const themeUrl = `./src/css/themes/${themeName}.css`;
 
   const containers = document.querySelectorAll('.icon');
   const themeIcon = document.querySelectorAll('.change-icon');
