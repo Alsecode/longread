@@ -32,7 +32,6 @@ const swiper = new Swiper('.blog-slider', {
 // Появление иконки с оглавлением
 document.addEventListener('DOMContentLoaded', function () {
   const icon = document.getElementById('bookmark-icon');
-  console.log(icon);
   const content = document.getElementById('introduction');
 
   function checkIconVisibility() {
