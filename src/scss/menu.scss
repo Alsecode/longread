@@ -1,0 +1,67 @@
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &__img {
+    cursor: pointer;
+  }
+
+  &_theme {
+    bottom: 20px;
+    right: 10px;
+  }
+
+  &_bookmark {
+    bottom: 90px;
+    right: 10px;
+    opacity: 0;
+    transform: translateY(-2000px);
+    transition: opacity 0.8s, transform 0.8s;
+  }
+
+  &_shadow-dark {
+    background: linear-gradient(145deg, #130427, #1b1127);
+    box-shadow: 4px 4px 10px #130427,
+      -4px -4px 10px #2b134e, inset 5px 5px 4px #2b134e,
+      inset -3px -3px 2px #24282c;
+  }
+
+  &_shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+    inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+    inset -11px -11px 3px rgba(255, 255, 255, 0.3);
+    background: white;
+  }
+
+  &_visible {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .icon {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+
+    &_theme {
+      bottom: 10px;
+    }
+
+    &_bookmark {
+      bottom: 65px;
+    }
+  }
+}

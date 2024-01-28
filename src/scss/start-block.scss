@@ -1,0 +1,27 @@
+.start-block {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__paragraph {
+    font-size: 24px;
+    width: 55%;
+    line-height: 1.5em;
+    padding-left: 30px;
+    margin: 130px 0;
+  }
+}
+
+
+@media screen and (max-width: 935px) {
+  .start-block {
+    &__paragraph {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      margin: 64px 0;
+    }
+  }
+}

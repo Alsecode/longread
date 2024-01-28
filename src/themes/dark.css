@@ -36,22 +36,22 @@ html {
     color: var(--slider-text-color);
 }
 
-.code-tag {
+.layout-block__tag {
     color: var(--code-tag-color);
 }
 
-.code-string {
+.layout-block__string {
     color: var(--code-string-color);
 }
 
-.uri-image {
+.components-block__image {
     filter: invert(1);
 }
 
-.change-icon[data-theme="light"] {
+.icon__img[data-theme="light"] {
     display: block;
 }
 
-.change-icon[data-theme="dark"] {
+.icon__img[data-theme="dark"] {
     display: none;
 }

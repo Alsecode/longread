@@ -1,3 +1,5 @@
+
+
 new WOW().init();
 
 window.addEventListener('scroll', function() {
@@ -27,62 +29,19 @@ const swiper = new Swiper('.blog-slider', {
     }
   });
 
-  // Переключение тем
-const switchers = document.querySelectorAll('.change-theme');
-
-switchers.forEach(switcher => {
-  switcher.addEventListener('click', function() {
-    applyTheme(this.dataset.theme);
-    localStorage.setItem('theme', this.dataset.theme);
-  })
-})
-
-const applyTheme = (themeName) => {
-  const themeUrl = `./src/css/themes/${themeName}.css`;
-
-  const containers = document.querySelectorAll('.icon');
-  const themeIcon = document.querySelectorAll('.change-icon');
-  setTimeout(() => {
-    themeIcon.forEach(icon => icon.classList.remove("change"));
-  }, 300);
-  themeIcon.forEach(icon => icon.classList.add("change"));
-
-  containers.forEach(container => {
-    const classList = container.classList;
-
-    for (var i = classList.length - 1; i >= 0; i -= 1) {
-      if (classList[i].startsWith('shadow')) {
-          classList.remove(classList[i]);
-      }
-    }
-  });
-  containers.forEach(container => {
-    themeName === 'dark' ? container.classList.add(`shadow-light`) : container.classList.add(`shadow-dark`);
-  });
-
-  document.querySelector('[title="theme"]').setAttribute('href', themeUrl);
-  
-}
-
-const activeTheme = localStorage.getItem('theme');
-if (activeTheme === null) {
-  applyTheme('dark');
-} else {
-  applyTheme(activeTheme);
-}
-
 // Появление иконки с оглавлением
 document.addEventListener('DOMContentLoaded', function () {
   const icon = document.getElementById('bookmark-icon');
+  console.log(icon);
   const content = document.getElementById('introduction');
 
   function checkIconVisibility() {
     const contentTop = content.offsetTop;
 
     if (window.scrollY >= contentTop) {
-      icon.classList.add('visible');
+      icon.classList.add('icon_visible');
     } else {
-      icon.classList.remove('visible');
+      icon.classList.remove('icon_visible');
     }
   }
 
@@ -91,23 +50,22 @@ document.addEventListener('DOMContentLoaded', function () {
   checkIconVisibility();
 });
 
-const openBtns = document.querySelectorAll('.open-modal');
+const openBtns = document.querySelectorAll('.icon_bookmark > *');
 const modal = document.getElementById('modal');
-console.log(modal);
 
 openBtns.forEach(btn => {
   btn.addEventListener('click', function() {
-    modal.classList.remove('w-0');
+    modal.classList.remove('sidebar_hidden');
     const overlay = document.createElement("div");
     overlay.classList.add('overlay');
     document.body.appendChild(overlay);
   })
 });
 
-const closeBtn = document.querySelector('.close');
+const closeBtn = document.querySelector('#close');
 
 closeBtn.addEventListener('click', function() {
-  modal.classList.add('w-0');
+  modal.classList.add('sidebar_hidden');
   const overlay = document.querySelector('.overlay');
   if (overlay) {
     document.body.removeChild(overlay);

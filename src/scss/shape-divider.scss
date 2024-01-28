@@ -1,0 +1,19 @@
+.shape-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  &__svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 195px;
+  }
+
+  &__fill {
+    fill: #BB99FF;
+  }
+}

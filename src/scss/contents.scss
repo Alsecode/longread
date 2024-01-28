@@ -1,0 +1,27 @@
+.contents {
+  padding-inline-start: 40px;
+
+  &__item {
+    position: relative;
+    list-style: none;
+    padding: 10px 15px;
+
+    &::before {
+      position: absolute;
+      content: attr(data-number);
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      justify-content: center;
+      min-width: 40px;
+      height: 50px;
+      left: -65px;
+      top: -6px;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 50px;
+      color: #D9C6F7;
+      font-family: Unbounded;
+    }
+  }
+}

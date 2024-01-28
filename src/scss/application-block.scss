@@ -1,0 +1,41 @@
+.application-block {
+  &__heading {
+    margin: 32px 0 16px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__item {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+  }
+
+  &__text, &__image {
+    width: 48%;
+  }
+
+  &__text-heading {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .application-block {
+    &__text {
+      flex: 0 0 100%;
+      order: -1;
+    }
+
+    &__image {
+      flex: 0 0 100%;
+    }
+  }
+}
