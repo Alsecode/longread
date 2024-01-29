@@ -8,17 +8,15 @@
     <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
 
     <link rel="stylesheet" href="./src/css/app.css">
-    <link rel="stylesheet" href="./src/libs/animate/animate.min.css">
     <link rel="stylesheet" href="./src/scss/general.scss">
     <link rel="stylesheet" title="theme" href="./src/themes/dark.css">
 
     <title>LongRead</title>
 
-    <script type="module" src="./src/libs/wow/wow.min.js"></script>
-    <script type="module" src="./src/libs/jquery/jquery.min.js"></script>
-    <script type="module" src="./src/libs/swiper/swiper.min.js"></script>
-    <script type="module" src="./src/js/index.js"></script>
-    <script type="module" src="./src/js/change-theme.js"></script>
+
+
+    <script type="module" src="./src/js/index.js" defer></script>
+    <script type="module" src="./src/js/change-theme.js" defer></script>
   </head>
   <body>
     <div class="shape-divider">
@@ -158,53 +156,47 @@
       <div class="web3-block" id="web3.0">
         <h2 class="web3-block__heading heading fade-in">Web 3.0</h2>
         <div class="blog-slider swiper-container-fade swiper-container-horizontal wow animate__animated animate__pulse">
-          <div class="blog-slider__wrp swiper-wrapper">
-            <div class="blog-slider__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2">
+          <div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 630px; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; opacity: 1;">
               <div class="blog-slider__img">
-                <img src="./img/web1.webp" alt="web1.0">
+                <img src="./img/web1.png" alt="web1.0">
               </div>
+
             </div>
-            
-            <div class="blog-slider__item swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0">
+            <div class="blog-slider__item swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 630px; transform: translate3d(-630px, 0px, 0px); transition-duration: 0ms; opacity: 1;">
               <div class="blog-slider__img">
-                
-                <img src="./img/web1.webp" alt="web1.0">
+
+                <img src="./img/web1.png" alt="web1.0">
               </div>
               <div class="blog-slider__content">
                 <div class="blog-slider__title">Web 1.0</div>
-                <div class="blog-slider__text">Web 1.0 - это эра, когда интернет только зарождался. В это время веб-страницы были статичными и информация передавалась в основном в однонаправленном режиме. Пользователи воспринимали интернет как источник данных, и их взаимодействие ограничивалось чтением и просмотром контента.</div>
-                <a class="blog-slider__button" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_1.0" target="_blank">Подробнее</a>
+                <div class="blog-slider__text">Web 1.0 - это эра, когда интернет только зарождался. В это время веб-страницы были статичными и информация передавалась в основном в однонаправленном режиме. Пользователи воспринимали интернет как источник данных, и их взаимодействие ограничивалось чтением и просмотром контента. </div>
+                <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_1.0" target="_blank" class="blog-slider__button">Подробнее</a>
               </div>
             </div>
-            <div class="blog-slider__item swiper-slide swiper-slide-prev" data-swiper-slide-index="1">
+            <div class="blog-slider__item swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 630px; transform: translate3d(-1260px, 0px, 0px); transition-duration: 0ms; opacity: 1;">
               <div class="blog-slider__img">
-                  <img src="./img/web2.webp" alt="web2.0">
+                  <img src="./img/web2.png" alt="web2.0">
               </div>
               <div class="blog-slider__content">
                 <div class="blog-slider__title">Web 2.0</div>
                 <div class="blog-slider__text">Web 2.0 перевернул интернет, сделав его местом для социального взаимодействия и обмена контентом. Это время активного участия, где пользователи сами создавали контент, общались в социальных сетях и участвовали в общественном обмене идеями. Вместо статичности появилась динамичность и интерактивность.</div>
-                <a class="blog-slider__button" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_2.0" target="_blank">Подробнее</a>
+                <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_2.0" target="_blank" class="blog-slider__button">Подробнее</a>
               </div>
             </div>
-            
-            <div class="blog-slider__item swiper-slide swiper-slide-active" data-swiper-slide-index="2">
+
+            <div class="blog-slider__item swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 630px; transform: translate3d(-1890px, 0px, 0px); transition-duration: 0ms; opacity: 1;">
               <div class="blog-slider__img">
-                  <img src="./img/web3.webp" alt="web3.0">
+                  <img src="./img/web3.png" alt="web3.0">
               </div>
               <div class="blog-slider__content">
                 <div class="blog-slider__title">Web 3.0</div>
                 <div class="blog-slider__text">Web 3.0 - это новая эра, где интернет становится децентрализованным и безопасным местом. С использованием технологии блокчейна и смарт-контрактов, Web 3.0 создает среду, где пользователи имеют полный контроль над своими данными и взаимодействием. Это переосмысленный интернет, где инновации направлены на обеспечение безопасности и прозрачности.</div>
-                <a class="blog-slider__button" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_3.0" target="_blank">Подробнее</a>
+                <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1_3.0" target="_blank" class="blog-slider__button">Подробнее</a>
               </div>
             </div>
             </div>
-          <div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets">
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-          </div>
-          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-        </div>
+          <div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
       </div>
 
       <p class="fade-in">Web 3.0 представляет следующий этап развития интернета, в котором информация обретает смысловое значение (семантический веб). Семантика позволяет компьютерам более эффективно анализировать содержимое веб-страниц и взаимодействовать с ним. Web 3.0 ориентирован на создание более интеллектуальных, персонализированных и взаимодействующих с пользователем интернет-сервисов.</p>

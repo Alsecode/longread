@@ -13,6 +13,9 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "animate.css": "^4.1.1",
+    "normalize.css": "^8.0.1",
+    "swiper": "^4.3.5",
+    "wow.js": "^1.2.2"
   }
 }

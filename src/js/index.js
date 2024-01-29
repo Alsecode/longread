@@ -1,6 +1,15 @@
+import Swiper from 'swiper';
 
+import WOW from 'wow.js';
+const wow = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 0,
+  mobile: true,
+  live: true,
+});
 
-new WOW().init();
+wow.init();
 
 window.addEventListener('scroll', function() {
     const elements = document.querySelectorAll('.fade-in');
@@ -17,17 +26,17 @@ window.addEventListener('scroll', function() {
 
 // Слайдер
 const swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    mousewheel: {
-      invert: false,
-    },
-    pagination: {
-      el: '.blog-slider__pagination',
-      clickable: true,
-    }
-  });
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  pagination: {
+    el: '.blog-slider__pagination',
+    clickable: true,
+  }
+});
 
 // Появление иконки с оглавлением
 document.addEventListener('DOMContentLoaded', function () {
