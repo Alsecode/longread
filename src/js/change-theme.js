@@ -1,5 +1,6 @@
 
   const switchers = document.querySelectorAll('.icon_theme > *');
+  console.log(switchers);
 
   switchers.forEach(switcher => {
     switcher.addEventListener('click', function() {
@@ -10,6 +11,8 @@
   
   const applyTheme = (themeName) => {
     const themeUrl = `./src/themes/${themeName}.css`;
+
+    console.log(themeName);
   
     const containers = document.querySelectorAll('.icon');
   
