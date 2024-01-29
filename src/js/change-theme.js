@@ -1,19 +1,25 @@
 
-  const switchers = document.querySelectorAll('.icon_theme > *');
-  console.log(switchers);
+const switchers = document.querySelectorAll('.icon_theme > *');
 
-  switchers.forEach(switcher => {
-    switcher.addEventListener('click', function() {
-      applyTheme(this.dataset.theme);
-      localStorage.setItem('theme', this.dataset.theme);
-    })
+switchers.forEach(switcher => {
+  switcher.addEventListener('click', function() {
+    removeCurrentTheme();
+    applyTheme(this.dataset.theme);
+    localStorage.setItem('theme', this.dataset.theme);
   })
+});
+
+
   
   const applyTheme = (themeName) => {
     const themeUrl = `./src/themes/${themeName}.css`;
 
-    console.log(themeName);
-  
+    const link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.href = themeUrl;
+    link.title = 'theme';
+
     const containers = document.querySelectorAll('.icon');
   
     setTimeout(() => {
@@ -33,9 +39,13 @@
     containers.forEach(container => {
       themeName === 'dark' ? container.classList.add(`icon_shadow-light`) : container.classList.add(`icon_shadow-dark`);
     });
-  
-    document.querySelector('[title="theme"]').setAttribute('href', themeUrl);
-    
+
+    document.head.appendChild(link);  
+  }
+
+  const removeCurrentTheme = () => {
+    const themeStyles = document.querySelectorAll('[title="theme"]');
+    themeStyles.forEach(link => link.remove());
   }
   
   const activeTheme = localStorage.getItem('theme');
