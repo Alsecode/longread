@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
           element.classList.add('show');
        }
     });
- });
+});
 
 // Слайдер
 const swiper = new Swiper('.blog-slider', {

@@ -1,3 +1,5 @@
+import '../../src/themes/dark.css';
+import '../../src/themes/light.css';
 
 const switchers = document.querySelectorAll('.icon_theme > *');
 
