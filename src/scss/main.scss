@@ -1,5 +1,4 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css');
-
+@import '../../node_modules/swiper/dist/css/swiper.min.css';
 
 @font-face {
   font-family: Onest;
@@ -32,23 +31,3 @@ html {
 .fade-in.show {
   opacity: 1;
 }
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #bcbabf;
-}
-
-*::-webkit-scrollbar {
-  width: 8px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #bcbabf;
-  border-radius: 20px;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #6e6d70;
-}
-
-

@@ -1,3 +1,5 @@
+@import 'main';
+@import 'scrollbar';
 @import 'animate.css';
 @import 'shape-divider.scss';
 @import 'menu.scss';
@@ -14,6 +16,7 @@
 @import 'video';
 @import 'footnote';
 @import 'web3-block';
+@import '../../node_modules/swiper/dist/css/swiper.min.css';
 @import 'slider';
 @import 'trends';
 @import 'cards';
@@ -21,7 +24,6 @@
 @import 'application-block';
 @import 'layout-block';
 @import 'conclusion-block';
-
 @import 'theme';
 
 
