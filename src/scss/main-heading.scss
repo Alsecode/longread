@@ -25,9 +25,16 @@
   animation: glitchBefore 3s infinite ease;
 }
 
+@media screen and (max-width: 935px) {
+  .main-heading {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .main-heading {
       font-size: 36px;
+      margin-bottom: 50px;
   }
 }
 
