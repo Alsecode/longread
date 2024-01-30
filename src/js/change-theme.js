@@ -1,27 +1,13 @@
-import '../../src/themes/dark.css';
-import '../../src/themes/light.css';
-
 const switchers = document.querySelectorAll('.icon_theme > *');
 
 switchers.forEach(switcher => {
   switcher.addEventListener('click', function() {
-    removeCurrentTheme();
     applyTheme(this.dataset.theme);
     localStorage.setItem('theme', this.dataset.theme);
   })
 });
 
-
-  
-  const applyTheme = (themeName) => {
-    const themeUrl = `./src/themes/${themeName}.css`;
-
-    const link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = themeUrl;
-    link.title = 'theme';
-
+const applyTheme = (themeName) => {
     const containers = document.querySelectorAll('.icon');
   
     setTimeout(() => {
@@ -42,14 +28,9 @@ switchers.forEach(switcher => {
       themeName === 'dark' ? container.classList.add(`icon_shadow-light`) : container.classList.add(`icon_shadow-dark`);
     });
 
-    document.head.appendChild(link);  
+    document.documentElement.dataset.selectedTheme = themeName;
   }
 
-  const removeCurrentTheme = () => {
-    const themeStyles = document.querySelectorAll('[title="theme"]');
-    themeStyles.forEach(link => link.remove());
-  }
-  
   const activeTheme = localStorage.getItem('theme');
   if (activeTheme === null) {
     applyTheme('dark');
