@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./src/css/app.css">
     <link rel="stylesheet" href="./src/scss/general.scss">
     <title>LongRead</title>
+
     <script type="module" src="./src/js/index.js" defer></script>
     <script type="module" src="./src/js/change-theme.js" defer></script>
+    <script type="module" src="./src/js/yt-optimization.js" defer></script>
   </head>
   <body>
     <div class="shape-divider">
@@ -137,7 +139,19 @@
             В технологическом контексте текущее состояние характеризуется быстрым и постоянным развитием и изменением различных аспектов Интернета и его приложений. В эти изменения входят: рост интернета вещей, интенсивное развитие беспроводных сетей, активное использование искусственного интеллекта и расширение облачных вычислений. Указанные технологические тенденции создают новые возможности в сферах, связанных со сбором, анализом и передачей данных, а также поднимают вопросы о безопасности, приватности и управлении информацией в сети.
         </p>
         <p class="introduction-block__video-heading">Как цифровые технологии изменяют мир?</p>
-        <iframe class="wow animate__animated animate__backInUp" width="100%" height="500px" src="https://www.youtube.com/embed/pq8rN779ph4" frameborder="0" allowfullscreen></iframe>
+    
+        <div class="video wow animate__animated animate__backInUp" data-video="https://youtu.be/pq8rN779ph4" width="100%" height="auto">
+          <img class="video__img" src="" alt="video">
+          <button class="video__play btn-reset">
+            <svg width="68" height="48" viewBox="0 0 68 48">
+              <path class="video__play-shape"
+                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+              </path>
+              <path class="video__play-icon" d="M 45,24 27,14 27,34"></path>
+            </svg>
+          </button>
+        </div>
+
         <p class="fade-in">
             Современное состояние области в социальном контексте отличается широким распространением цифровых средств, что влечет изменения в образе жизни, общении, обучении и трудовой деятельности. Социальные сети, онлайн-платформы и цифровые медиа стали основными каналами для обмена информацией и выражения мнений. Создаются уникальные возможности для гражданской активности, но также чаще ставятся вопросы о фильтрации информации и влиянии алгоритмов на мнения людей.  
         </p>
@@ -219,8 +233,19 @@
 
       <p class="fade-in">Концепция Web 3.0 является логическим продолжением Web 2.0, которая обеспечивала понимание информации в Web в первую очередь человеком. Web 3.0 же ориентирована на взаимодействие и понимание данных в Web компьютерными системами. Внедрение Web 3.0 позволяет интернету стать более интегрированным, интеллектуальным и контекстуальным. Вместо простого представления данных и информации, Web 3.0 нацелен на создание интернета, который способен понимать смысл информации, учитывать контекст и предоставлять более умные и персонализированные услуги и решения. </p>
       <p class="fade-in">Таким образом, Web 3.0 является более мощным инструментом для удовлетворения потребностей пользователей, более эффективной передачи знаний и информации, а также более продуктивным инструментом для различных сфер деятельности, включая бизнес, образование, здравоохранение и многие другие.</p>
-      <iframe class="wow animate__animated animate__backInUp" width="100%" height="500px" src="https://www.youtube.com/embed/WxBjCzB3kk8" frameborder="0" allowfullscreen></iframe>
-        
+      
+      <div class="video wow animate__animated animate__backInUp" data-video="https://youtu.be/WxBjCzB3kk8" width="100%" height="auto">
+        <img class="video__img" src="" alt="video">
+        <button class="video__play btn-reset">
+          <svg width="68" height="48" viewBox="0 0 68 48">
+            <path class="video__play-shape"
+              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+            </path>
+            <path class="video__play-icon" d="M 45,24 27,14 27,34"></path>
+          </svg>
+        </button>
+      </div>
+
       <div class="footnote web3-block__footnote wow animate__animated animate__shakeY">
         <p class="fade-in">Подробнее о возможностях и нововведениях концепции Web 3.0 можно прочитать в научных статьях
         <a class="link" href="https://cyberleninka.ru/article/n/vozmozhnosti-sistemy-web-3-0-v-sovremennom-mediaprostranstve-problemy-i-perspektivy/viewer" target="_blank">В.А. Шачковой</a>
