@@ -4,11 +4,13 @@
 @font-face {
   font-family: Onest;
   src: url('../../public/fonts/Onest-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Unbounded;
   src: url('../../public/fonts/Unbounded-Regular.ttf');
+  font-display: swap;
 }
 
 html {
