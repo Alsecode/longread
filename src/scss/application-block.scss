@@ -29,6 +29,14 @@
 
 @media screen and (max-width: 900px) {
   .application-block {
+    &__item {
+      margin: 12px 0;
+    }
+    
+    &__content {
+      gap: 0;
+    }
+
     &__text {
       flex: 0 0 100%;
       order: -1;
