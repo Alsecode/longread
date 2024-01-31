@@ -3,25 +3,30 @@
 
   &__item {
     position: relative;
-    list-style: none;
+
     padding: 10px 15px;
+
+    list-style: none;
 
     &::before {
       position: absolute;
-      content: attr(data-number);
+      top: -6px;
+      left: -65px;
+
       display: flex;
       align-items: center;
-      padding: 10px 15px;
       justify-content: center;
       min-width: 40px;
       height: 50px;
-      left: -65px;
-      top: -6px;
+      padding: 10px 15px;
+
+      color: #D9C6F7;
       font-weight: bold;
       font-size: 40px;
+      font-family: Unbounded, Verdana, Geneva, Tahoma, sans-serif;
       line-height: 50px;
-      color: #D9C6F7;
-      font-family: Unbounded;
+
+      content: attr(data-number);
     }
   }
 }

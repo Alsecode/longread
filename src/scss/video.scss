@@ -1,21 +1,23 @@
 .video {
   position: relative;
+
+  display: inline-block;
   width: 100%;
   height: auto;
-  display: inline-block;
 
   &__img, iframe {
+    display: block;
     width: 100%;
     height: 500px;
-    display: block;
-    object-fit: cover;
     border: none;
+    object-fit: cover;
   }
 
   &__play {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+
     transform: translate(-50%, -50%);
 
     &-shape {
@@ -24,7 +26,7 @@
     }
 
     &-icon {
-      fill: #ffffff;
+      fill: #fff;
     }
 
     &:focus {
@@ -39,12 +41,13 @@
 
 .video:hover .video__play-shape,
 .video:focus .video__play-shape {
-	fill: #ff0000;
+	fill: #f00;
 	fill-opacity: 1;
 }
 
 .btn-reset {
   border: none;
+
   background: transparent;
   cursor: pointer;
 }

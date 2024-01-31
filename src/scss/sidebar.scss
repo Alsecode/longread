@@ -1,24 +1,27 @@
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0px;
-  padding: 0;
+  right: 0;
+  z-index: 3;
+
   width: 400px;
   min-height: 100%;
-  z-index: 3;
-  transition: ease-in 0.3s;
+  padding: 0;
   overflow: auto;
+
+  transition: ease-in 0.3s;
 
   &__content {
     padding: 36px;
     padding-right: 15px;
+
     background-color: inherit;
   }
 
   &__header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__header {
@@ -27,50 +30,62 @@
   }
 
   &__item {
-    line-height: 1.5rem;
     padding: 15px;
+
+    line-height: 1.5rem;
   }
 
   &__close {
+    position: relative;
+
+    box-sizing: border-box;
     width: 40px;
     height: 40px;
-    position: relative;
+    border: none;
+
     text-decoration: none;
+
     background: transparent;
     box-shadow: none;
-    border: none;
-    box-sizing: border-box;
     cursor: pointer;
 
-    &:before {
-      content: "";
+    &::before {
       position: absolute;
-      height: 2px;
-      width: 40px;
-      background-color: #fff;
-      left: 50%;
       top: 50%;
+      left: 50%;
+
+      width: 40px;
+      height: 2px;
+
+      background-color: #fff;
       transform: translate(-50%, -50%) rotate(-45deg);
-      transition: ease-out 0.3s all;
-    }
 
-    &:after {
+      transition: ease-out 0.3s all;
+
       content: "";
-      position: absolute;
-      height: 2px;
-      width: 40px;
-      background-color: #fff;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-      transition: ease-out 0.3s all;
     }
 
-    &:hover:before, &:focus:before {
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 40px;
+      height: 2px;
+
+      background-color: #fff;
+      transform: translate(-50%, -50%) rotate(45deg);
+
+      transition: ease-out 0.3s all;
+
+      content: "";
+    }
+
+    &:hover::before, &:focus::before {
       transform: translate(-50%, -50%) rotate(135deg);
     }
 
-    &:hover:after, &:focus:after {
+    &:hover::after, &:focus::after {
       transform: translate(-50%, -50%) rotate(225deg);
     }
   }
@@ -110,8 +125,10 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
+
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 2;
+
+  background: rgb(0 0 0 / 80%);
 }

@@ -16,57 +16,73 @@ $corner-side-size-height: 1.5vmin;
 $animation-duration: 3000ms;
 
 .canvas {
-  width: $canvas-size;
-  height: $canvas-size;
-  max-width: $canvas-max-size;
-  max-height: $canvas-max-size;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   position: relative;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  width: $canvas-size;
+  max-width: $canvas-max-size;
+  height: $canvas-size;
+  max-height: $canvas-max-size;
 }
 
 .ninth {
   position: relative;
+
   overflow: hidden;
 }
 
 .corners-wrapper{
   position: absolute;
   z-index: 1;
+
   mix-blend-mode: plus-lighter;
 }
 
 .ninth:nth-child(1) .corners-wrapper{
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
+
 .ninth:nth-child(2) .corners-wrapper{
   bottom: 0;
   left: 50%;
+
   transform: rotate(45deg);
 }
+
 .ninth:nth-child(3) .corners-wrapper{
   bottom: 0;
+
   transform: rotate(90deg);
 }
+
 .ninth:nth-child(4) .corners-wrapper{
   top: 50%;
   right: 0;
+
   transform: rotate(315deg);
 }
+
 .ninth:nth-child(6) .corners-wrapper{
   top: 50%;
+
   transform: rotate(135deg);
 }
+
 .ninth:nth-child(7) .corners-wrapper{
   right: 0;
+
   transform: rotate(270deg);
 }
+
 .ninth:nth-child(8) .corners-wrapper{
   left: 50%;
+
   transform: rotate(225deg);
 }
+
 .ninth:nth-child(9) .corners-wrapper{
   transform: rotate(180deg);
 }
@@ -75,53 +91,64 @@ $animation-duration: 3000ms;
   position: absolute;
 
   &_large {
+    right: 0;
+    bottom: 0;
+
     width: $corner-size-large;
     height: $corner-size-large;
-    bottom: 0;
-    right: 0;
   }
 
   &_medium {
+    right: 4vmin;
+    bottom: 4vmin;
+
     width: $corner-size-medium;
     height: $corner-size-medium;
+
     opacity: 0.35;
-    bottom: 4vmin;
-    right: 4vmin;
   }
 
   &_small {
+    right: 8vmin;
+    bottom: 8vmin;
+
     width: $corner-size-small;
     height: $corner-size-small;
-    bottom: 8vmin;
-    right: 8vmin;
   }
 
   &::before, &::after {
-    content: "";
     position: absolute;
+
+    content: "";
   }
 
   &::before {
+    right: 0;
+
     width: $corner-side-size-width;
     height: 100%;
-    right: 0;
+
     background: linear-gradient(transparent, $main-color 50%);
   }
 
   &::after {
+    bottom: 0;
+
     width: 100%;
     height: $corner-side-size-height;
-    bottom: 0;
+
     background: linear-gradient(90deg, transparent, $main-color 50%);
   }
 }
 
 .circle {
   position: absolute;
+
   width: $circle-size;
   height: $circle-size;
-  background-color: $main-color;
   border-radius: 50%;
+
+  background-color: $main-color;
   box-shadow: 0 0 20px $main-color;
 }
 
@@ -130,31 +157,41 @@ $animation-duration: 3000ms;
   100% {
     top: 0;
     left: 0;
+
     transform: scale(0) translate(0%, 0%);
   }
+
   20% {
     top: 0;
     left: 0;
+
     transform: scale(1) translate(0%, 0%);
     opacity: 1;
   }
+
   85% {
     top: 50%;
     left: 50%;
+
     transform: scale(1) translate(-50%, -50%);
     opacity: 0.75;
   }
+
   95% {
     top: calc(50% - $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, -50%);
     opacity: 0;
   }
 }
+
 .circle_first {
   top: 0;
   left: 0;
+
   transform: scale(0) translate(0%, 0%);
+
   animation: move-circle-first $animation-duration ease-in-out infinite;
 }
 
@@ -163,31 +200,41 @@ $animation-duration: 3000ms;
   100% {
     top: calc(-1 * $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, -80%);
   }
+
   20% {
     top: 0;
     left: 50%;
+
     transform: scale(1) translate(-50%, -80%);
     opacity: 1;
   }
+
   85% {
     top: 50%;
     left: 50%;
+
     transform: scale(1) translate(-50%, -50%);
     opacity: 0.75;
   }
+
   95% {
     top: calc(50% - $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, -50%);
     opacity: 0;
   }
 }
+
 .circle_second {
   top: 0;
   left: 50%;
+
   transform: scale(0) translate(-50%, -80%);
+
   animation: move-circle-second $animation-duration ease-in-out infinite;
   animation-delay: calc($animation-duration * 0.4);
 }
@@ -197,31 +244,41 @@ $animation-duration: 3000ms;
   100% {
     top: 0;
     right: 0;
+
     transform: scale(0) translate(0%, 0%);
   }
+
   20% {
     top: 0;
     right: 0;
+
     transform: scale(1) translate(0%, 0%);
     opacity: 1;
   }
+
   85% {
     top: 50%;
     right: 50%;
+
     transform: scale(1) translate(50%, -50%);
     opacity: 0.75;
   }
+
   95% {
     top: calc(50% - $circle-size / 2);
     right: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(50%, -50%);
     opacity: 0;
   }
 }
+
 .circle_third {
   top: 0;
   right: 0;
+
   transform: scale(0) translate(0%, 0%);
+
   animation: move-circle-third $animation-duration ease-in-out infinite;
 }
 
@@ -230,31 +287,41 @@ $animation-duration: 3000ms;
   100% {
     top: calc(50% - $circle-size / 2);
     left: calc(-1 * $circle-size / 2);
+
     transform: scale(0) translate(-80%, -50%);
   }
+
   20% {
     top: 50%;
     left: 0;
+
     transform: scale(1) translate(-80%, -50%);
     opacity: 1;
   }
+
   85% {
     top: 50%;
     left: 50%;
+
     transform: scale(1) translate(-50%, -50%);
     opacity: 0.75;
   }
+
   95% {
     top: calc(50% - $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, -50%);
     opacity: 0;
   }
 }
+
 .circle_fourth {
   top: 50%;
   left: 0;
+
   transform: scale(0) translate(-80%, -50%);
+
   animation: move-circle-fourth $animation-duration ease-in-out infinite;
   animation-delay: calc($animation-duration * 0.4);
 }
@@ -264,31 +331,41 @@ $animation-duration: 3000ms;
   100% {
     top: calc(50% - $circle-size / 2);
     right: calc(-1 * $circle-size / 2);
+
     transform: scale(0) translate(80%, -50%);
   }
+
   20% {
     top: 50%;
     right: 0;
+
     transform: scale(1) translate(80%, -50%);
     opacity: 1;
   }
+
   85% {
     top: 50%;
     right: 50%;
+
     transform: scale(1) translate(50%, -50%);
     opacity: 0.75;
   }
+
   95% {
     top: calc(50% - $circle-size / 2);
     right: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(50%, -50%);
     opacity: 0;
   }
 }
+
 .circle_fifth {
   top: 50%;
   right: 0;
+
   transform: scale(0) translate(80%, -50%);
+
   animation: move-circle-fifth $animation-duration ease-in-out infinite;
   animation-delay: calc($animation-duration * 0.4);
 }
@@ -298,31 +375,41 @@ $animation-duration: 3000ms;
   100% {
     bottom: 0;
     left: 0;
+
     transform: scale(0) translate(0%, 0%);
   }
+
   20% {
     bottom: 0;
     left: 0;
+
     transform: scale(1) translate(0%, 0%);
     opacity: 1;
   }
+
   85% {
     bottom: 50%;
     left: 50%;
+
     transform: scale(1) translate(-50%, 50%);
     opacity: 0.75;
   }
+
   95% {
     bottom: calc(50% - $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, 50%);
     opacity: 0;
   }
 }
+
 .circle_sixth {
   bottom: 0;
   left: 0;
+
   transform: scale(0) translate(0%, 0%);
+
   animation: move-circle-sixth $animation-duration ease-in-out infinite;
 }
 
@@ -331,31 +418,41 @@ $animation-duration: 3000ms;
   100% {
     bottom: calc(-1 * $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, 80%);
   }
+
   20% {
     bottom: 0;
     left: 50%;
+
     transform: scale(1) translate(-50%, 80%);
     opacity: 1;
   }
+
   85% {
     bottom: 50%;
     left: 50%;
+
     transform: scale(1) translate(-50%, 50%);
     opacity: 0.75;
   }
+
   95% {
     bottom: calc(50% - $circle-size / 2);
     left: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(-50%, 50%);
     opacity: 0;
   }
 }
+
 .circle_seventh {
   bottom: 0;
   left: 50%;
+
   transform: scale(0) translate(-50%, 80%);
+
   animation: move-circle-seventh $animation-duration ease-in-out infinite;
   animation-delay: calc($animation-duration * 0.4);
 }
@@ -363,44 +460,56 @@ $animation-duration: 3000ms;
 @keyframes move-circle-eighth {
   0%,
   100% {
-    bottom: 0;
     right: 0;
+    bottom: 0;
+
     transform: scale(0) translate(0%, 0%);
   }
+
   20% {
-    bottom: 0;
     right: 0;
+    bottom: 0;
+
     transform: scale(1) translate(0%, 0%);
     opacity: 1;
   }
+
   85% {
-    bottom: 50%;
     right: 50%;
+    bottom: 50%;
+
     transform: scale(1) translate(50%, 50%);
     opacity: 0.75;
   }
+
   95% {
-    bottom: calc(50% - $circle-size / 2);
     right: calc(50% - $circle-size / 2);
+    bottom: calc(50% - $circle-size / 2);
+
     transform: scale(0) translate(50%, 50%);
     opacity: 0;
   }
 }
+
 .circle_eighth {
-  bottom: 0;
   right: 0;
+  bottom: 0;
+
   transform: scale(0) translate(0%, 0%);
+
   animation: move-circle-eighth $animation-duration ease-in-out infinite;
 }
 
 .meetingPoint {
+  position: absolute;
+
   width: 12vmin;
   height: 12vmin;
-  border-radius: 50%;
   border: solid 1.5vmin $meeting-point-color;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 30px $main-color);
   mix-blend-mode: plus-lighter;
-  position: absolute;
   inset: 50%;
-  transform: translate(-50%, -50%);
 }

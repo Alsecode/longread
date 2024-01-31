@@ -11,10 +11,10 @@
 
   &__item {
     display: flex;
-    max-width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
     margin: 24px 0;
   }
 

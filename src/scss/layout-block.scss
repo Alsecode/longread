@@ -6,22 +6,24 @@
   &__list-heading {
     margin: 32px 0;
     padding: 0;
+
     font-weight: bold;
     font-size: 28px;
     text-align: center;
   }
 
   &__code-example {
+    max-width: 100%;
     margin-top: -50px;
     margin-bottom: -100px;
-    max-width: 100%;
-    white-space: pre-wrap;
+
     font-size: 20px;
     line-height: 1.5rem;
+    white-space: pre-wrap;
   }
 
   &__meta {
-    color: rgb(104,104,91);
+    color: rgb(104 104 91);
   }
 
   &__tag {
@@ -32,13 +34,15 @@
 
   &__code {
     display: block;
-    word-break: break-word;
-    word-wrap: break-word;
     padding: 0;
-    font-size: inherit;
-    background-color: transparent;
     border: 0;
     border-radius: 0;
+
+    font-size: inherit;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    background-color: transparent;
   }
 
   &__image {
